@@ -7,12 +7,12 @@ float xpos;
 float ypos;
 float xspeed;
 
-Car() {
+Car(tempColor, tempXpos, tempYpos, tempXspeed) {
 
-  c = color(0,0,255);
-  xpos = width/2;
-  ypos = height/2; 
-  xspeed = 1;
+  c = tempColor;
+  xpos = tempXpos;
+  ypos = tempYpos; 
+  xspeed = tempXspeed;
 }
 
 void display() {
