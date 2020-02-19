@@ -1,18 +1,20 @@
-Car myCar;
+Car[] cars = new Car[100];
 
 void setup(){
   size(400,400);
-  //Initiatlise Car Object
-  myCar = new Car();
-
+  //Initiatlise Car Objects
+  for int(int i = 0; i < cars.length; i++){
+    cars[i] = new Car(color(i*2), 0, i*2, i);
+  }
 }
 
 
 void draw() {
 
   background(255);
-  //Operate Car Object.
-  myCar.move();
-  myCar.display();
-  
+  //Operate Car Objects
+  for (int i = 0; i < cars.length; i++){
+  cars[i].move();
+  cars[i].display();
+  }
 }
