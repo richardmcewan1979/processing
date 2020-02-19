@@ -7,7 +7,7 @@ float xpos;
 float ypos;
 float xspeed;
 
-Car(tempColor, tempXpos, tempYpos, tempXspeed) {
+Car(color tempColor, float tempXpos, float tempYpos, float tempXspeed) {
 
   c = tempColor;
   xpos = tempXpos;
@@ -19,8 +19,9 @@ void display() {
   
   //The car is just a square
   rectMode(CENTER);
+  stroke(0);
   fill(c);
-  rect(xpos, ypos, 30, 15);
+  rect(xpos, ypos, 20, 10);
 }
 
 void move() {
